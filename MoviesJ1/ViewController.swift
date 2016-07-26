@@ -10,8 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var movie = Movie()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        movie.updateImageURL()
+        print(movie.name)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
