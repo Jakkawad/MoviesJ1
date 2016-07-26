@@ -8,6 +8,8 @@
 
 import Foundation
 import Alamofire
+
+
 import SwiftyJSON
 
 class Movie {
@@ -35,6 +37,17 @@ class Movie {
 
 class Category {
     static let sharedInstance = Category()
+    let genres:[Genre]
+    
+    init() {
+        
+        let category1 = Genre(_name: "", _movies: [])
+        
+        
+        let category2 = Genre(_name: "", _movies: [])
+        
+        genres = [category1, category2]
+    }
     
 }
 
